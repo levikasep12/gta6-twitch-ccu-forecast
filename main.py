@@ -50,7 +50,9 @@ Z = [-1.645, -0.674, 0, 0.674, 1.645]
 SCALE_SIGMA = 2.0
 # The residual spread is narrowed by this factor in log space around the
 # fitted median: the raw cross-launch spread overstates how far a clean
-# rolling launch like this one strays from its peers.
+# rolling launch like this one strays from its peers. 0.6 sits in the flat
+# middle of the tested range (0.5-0.8 all score within noise of each
+# other) while keeping 90% coverage near its nominal level.
 SPREAD_FACTOR = 0.6
 # Fallback spread (log units) when a pool has no usable curve for an hour:
 # the house baseline's widening, so the entry stays valid.
